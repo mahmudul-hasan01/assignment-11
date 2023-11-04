@@ -23,7 +23,15 @@ const Navbar = () => {
                     <div>
                         <div className="relative">
                             <button onClick={() => setOpen(!open)}>Dashboard</button>
-                            
+                            {open &&
+                                <div className="flex flex-col top-[54px] absolute w-[130px] py-4 space-y-3">
+                                    <NavLink to='/MySevice' className={({ isActive }) => isActive ? ' text-red-600' : ''}>My Sevice</NavLink>
+
+                                    <NavLink to='/AddServices' className={({ isActive }) => isActive ? ' text-red-600' : ''}>Add Services</NavLink>
+
+                                    <NavLink to='/MySchedules' className={({ isActive }) => isActive ? ' text-red-600' : ''}>My Schedules</NavLink>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
@@ -31,6 +39,7 @@ const Navbar = () => {
                     {
                         user ? <button onClick={hendleSignOut}>Sign Out</button> : <NavLink to='/Login'>Login</NavLink>
                     }
+                    
                 </div>
             </div>
         </div>
