@@ -16,6 +16,8 @@ import MyService from './components/My-Service/MyService';
 import MySchedules from './components/My-schedules/MySchedules';
 import AddServices from './components/Add-services/AddServices';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import ShowAllService from './components/Home/ShowAllService';
+import ServiceDetailsButton from './components/Home/ServiceDetailsButton';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +55,14 @@ const router = createBrowserRouter([
       {
         path: '/AddServices',
         element: <AddServices></AddServices>
+      },
+      {
+        path: '/ShowAllService',
+        element: <ShowAllService></ShowAllService>
+      },
+      {
+        path: '/ServiceDetailsButton',
+        element: <ServiceDetailsButton></ServiceDetailsButton>
       }
     ]
   },

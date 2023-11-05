@@ -22,7 +22,7 @@ const Navbar = () => {
                     <NavLink to='/Service' className={({ isActive }) => isActive ? ' text-red-600' : ''}>Services</NavLink>
                     {
                         user?.email && <div>
-                            <div className="relative">
+                            <div className="relative z-50">
                                 <button onClick={() => setOpen(!open)}>Dashboard</button>
                                 {open &&
                                     <div className="flex flex-col top-[54px] absolute w-[130px] py-4 space-y-3">

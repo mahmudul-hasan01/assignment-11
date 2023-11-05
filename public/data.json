@@ -1,10 +1,10 @@
 [
     {
         "serviceImage": "https://i.ibb.co/QCMdrTT/Home-Builder.jpg",
-        "serviceName": "Home Builder",
+        "serviceName": "Builder",
         "serviceDescription": "Exquisite craftsmanship meets visionary design with our home building services. As seasoned builders, we transform dreams into reality, constructing homes that blend functionality, style, and innovation. From concept to completion, we prioritize quality, ensuring each detail reflects unparalleled expertise. Our commitment extends beyond bricks and mortar; we build lifestyles. With a keen eye for architectural finesse and a dedication to client satisfaction, we turn your aspirations into timeless structures. Whether crafting contemporary marvels or traditional abodes, our team embraces the challenge, delivering homes that stand as testaments to precision and passion. Elevate your living experience with our trusted home building expertise.",
-        "image": "provider1_image.jpg",
-        "name": "CleanCo",
+        "image": "https://i.ibb.co/7pQtHqJ/istockphoto-467063167-170667a.jpg",
+        "name": "Max",
         "serviceArea": "Citywide",
         "servicePrice": "$100"
     },
@@ -12,8 +12,8 @@
         "serviceImage": "https://i.ibb.co/vJBX9Mf/10-Reasons-Why-a-Professional-Plumber-Is-Better-Than-DIY-Katy-TX.jpg",
         "serviceName": " Plumber",
         "serviceDescription": "Unlock the expertise of our skilled plumbers for unparalleled plumbing solutions. With a commitment to excellence, our team addresses plumbing challenges promptly and effectively. From routine maintenance to emergency repairs, we deliver reliable service with a focus on quality craftsmanship. Leaky faucets, clogged drains, or complex installations—trust us to provide tailored solutions for your plumbing needs. With years of experience, our plumbers bring a wealth of knowledge to every project, ensuring precision and customer satisfaction. Partner with us for professional, timely, and cost-effective plumbing services, and let our dedication to excellence keep your systems running smoothly. Your plumbing concerns, our expertise – a perfect match for a stress-free experience.",
-        "image": "provider2_image.jpg",
-        "name": "GreenGardens",
+        "image": "https://i.ibb.co/7Q5mCsf/212246180-portrait-of-a-handsome-young-man-with-beard-and-stylish-haircut.jpg",
+        "name": "John",
         "serviceArea": "Local",
         "servicePrice": "$75"
     },
@@ -21,17 +21,17 @@
         "serviceImage": "https://i.ibb.co/0FRQbvK/Electrician-Franchises-vs-Other-Home-Service-Franchises-e1680098823998.jpg",
         "serviceName": "Electrician",
         "serviceDescription": "Energize your space with our skilled electricians, providing top-tier electrical solutions tailored to your needs. With a commitment to safety and expertise in the latest technologies, we handle everything from routine repairs to intricate installations. Our team ensures your electrical systems function seamlessly, offering peace of mind and reliability. Whether it's rewiring a home, installing energy-efficient lighting, or addressing electrical faults, we bring precision and efficiency to every project. Count on us for prompt service, transparent communication, and a dedication to exceeding industry standards. Illuminate your surroundings with confidence – choose our electricians for a seamless blend of technical prowess and exceptional customer service.",
-        "image": "provider3_image.jpg",
-        "name": "TechGenius",
+        "image": "https://i.ibb.co/WtmRbck/360-F-245563558-XH9-Pe5-LJI2kr7-VQuz-QKAj-Abz9-PAyej-G1.jpg",
+        "name": "Zayn",
         "serviceArea": "Global",
         "servicePrice": "$120"
     },
     {
         "serviceImage": "https://i.ibb.co/swjqfXY/16-questions-to-ask-before-hiring-professional-house-painters-in-hobart.jpg",
-        "serviceName": "Home Painter",
+        "serviceName": "Painter",
         "serviceDescription": "Transform your living spaces into vibrant works of art with our professional painters. We bring color to life, combining expertise and creativity to enhance your home or business. From meticulous prep work to flawless finishes, our team ensures a seamless painting experience. Whether you seek a bold statement or a subtle refresh, we provide personalized solutions to suit your style. With a keen eye for detail and a commitment to quality, our painters turn visions into reality. Trust us for a spectrum of services, from interior makeovers to exterior revivals, delivering results that inspire and elevate your surroundings. Your canvas, our craftsmanship – let your space become a masterpiece.",
-        "image": "provider4_image.jpg",
-        "name": "FitFlex",
+        "image": "https://i.ibb.co/ZSyYWNV/360-F-497662812-7r-GW6-PMBJR9-Abr-Kc-Gg-N5-S1lu-XYTj-H92i.jpg",
+        "name": "Luke",
         "serviceArea": "Community Gym",
         "servicePrice": "$150"
     }

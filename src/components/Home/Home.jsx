@@ -5,7 +5,7 @@ import axios from "axios";
 const Home = () => {
 
     const getService = async () => {
-        const data =await axios.get('http://localhost:5000/service')
+        const data =await axios.get('/data.json')
         console.log(data)
         return data
     }
