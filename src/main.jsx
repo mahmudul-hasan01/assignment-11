@@ -15,6 +15,7 @@ import AuthProvider from './components/AuthProvider/AuthProvider';
 import MyService from './components/My-Service/MyService';
 import MySchedules from './components/My-schedules/MySchedules';
 import AddServices from './components/Add-services/AddServices';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const router = createBrowserRouter([
   {
@@ -57,10 +58,14 @@ const router = createBrowserRouter([
   },
 ]);
 
+const queryClient = new QueryClient()
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthProvider>
-       <RouterProvider router={router} />
-    </AuthProvider>
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </QueryClientProvider>
   </React.StrictMode>,
 )
