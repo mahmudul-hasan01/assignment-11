@@ -1,9 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 
-const ShowAddServiceCart = ({ service,henleClick,henlebutton }) => {
+const ShowAddServiceCart = ({ service, henleClick, henlebutton }) => {
 
     const { serviceImage, serviceName, serviceDescription, viewDetailButton, servicePrice, image, name, serviceArea } = service
-
 
     return (
         <div>
@@ -15,12 +14,15 @@ const ShowAddServiceCart = ({ service,henleClick,henlebutton }) => {
                     <div className="w-[50%]">
                         <h1 className="text-5xl font-bold">{serviceName}</h1>
                         <p className="py-4">{serviceDescription}</p>
-                        <div>
+                        <div className="flex justify-between">
                             <div>
-                                <img className="w-[60px] h-[60px] rounded-[50%] mb-2" src={image} alt="" />
-                                <h1>Name: {name}</h1>
+                                <img className="w-[60px] h-[60px] rounded-[50%]" src={image} alt="" />
+                                <h1 className="my-3">Name: <span className="text-xl">{name}</span></h1>         
                             </div>
-                            <p className="py-2">Price: {servicePrice}</p>
+                            <div>
+                                <p className="py-2">Price: <span className="text-xl">{servicePrice}</span></p>
+                                <p>serviceArea: <span className="text-xl">{serviceArea}</span></p>
+                            </div>
                         </div>
                         <Link to='/ServiceDetailsButton' className="btn btn-primary mr-3">{viewDetailButton}</Link>
                         {/* <Link to='/ShowAllService' className="btn btn-secondary">Show All</Link> */}

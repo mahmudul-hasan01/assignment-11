@@ -6,7 +6,6 @@ const Home = () => {
 
     const getService = async () => {
         const data =await axios.get('/data.json')
-        console.log(data)
         return data
     }
     const { data } = useQuery({
