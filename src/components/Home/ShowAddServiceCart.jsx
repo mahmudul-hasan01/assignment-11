@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const ShowAddServiceCart = ({ service, henleClick, henlebutton }) => {
 
-    const { serviceImage, serviceName, serviceDescription, viewDetailButton, servicePrice, image, name, serviceArea } = service
+    const { _id,serviceImage, serviceName, serviceDescription, viewDetailButton, servicePrice, image, name, serviceArea } = service
 
     return (
         <div>
@@ -24,7 +24,7 @@ const ShowAddServiceCart = ({ service, henleClick, henlebutton }) => {
                                 <p>serviceArea: <span className="text-xl">{serviceArea}</span></p>
                             </div>
                         </div>
-                        <Link to='/ServiceDetailsButton' className="btn btn-primary mr-3">{viewDetailButton}</Link>
+                        <Link to={`/ServiceDetailsButton/${_id}`} className="btn btn-primary mr-3">{viewDetailButton}</Link>
                         {/* <Link to='/ShowAllService' className="btn btn-secondary">Show All</Link> */}
                     </div>
                 </div>

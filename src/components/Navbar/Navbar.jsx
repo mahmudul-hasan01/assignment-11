@@ -25,7 +25,7 @@ const Navbar = () => {
                             <div className="relative z-50">
                                 <button onClick={() => setOpen(!open)}>Dashboard</button>
                                 {open &&
-                                    <div className="flex flex-col top-[54px] absolute w-[130px] py-4 space-y-3">
+                                    <div className="flex flex-col top-[54px] bg-slate-100 absolute w-[130px] py-4 space-y-3">
                                         <NavLink to='/MySevice' className={({ isActive }) => isActive ? ' text-red-600' : ''}>My Sevice</NavLink>
 
                                         <NavLink to='/AddServices' className={({ isActive }) => isActive ? ' text-red-600' : ''}>Add Services</NavLink>

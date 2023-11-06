@@ -61,8 +61,9 @@ const router = createBrowserRouter([
         element: <ShowAllService></ShowAllService>
       },
       {
-        path: '/ServiceDetailsButton',
-        element: <ServiceDetailsButton></ServiceDetailsButton>
+        path: '/ServiceDetailsButton/:id',
+        element: <ServiceDetailsButton></ServiceDetailsButton>,
+        loader: ({params})=>fetch(`http://localhost:5000/allService/${params.id}`)
       }
     ]
   },
