@@ -1,8 +1,27 @@
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import { useContext } from "react";
+
+import { AuthContext } from "../AuthProvider/AuthProvider";
+import MyScheduleCaet from "./MyScheduleCaet";
 
 const MySchedules = () => {
+    const {user}=useContext(AuthContext)
+    const getService = async () => {
+        const data =await axios.get(`http://localhost:5000/PurchaseData/?email=${user?.email}`,{withCredentials:true})
+        return data
+    }
+    const { data } = useQuery({
+        queryKey: ['myService'],
+        queryFn: getService
+    })
+    console.log(data?.data)
+
     return (
         <div>
-            
+            {
+                data?.data.map(item => <MyScheduleCaet key={item._id} BookingData={item}></MyScheduleCaet>)
+            }
         </div>
     );
 };

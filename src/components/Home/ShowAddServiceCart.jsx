@@ -1,6 +1,6 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const ShowAddServiceCart = ({ service, henleClick, henlebutton }) => {
+const ShowAddServiceCart = ({ service, }) => {
 
     const { _id,serviceImage, serviceName, serviceDescription, viewDetailButton, servicePrice, image, name, serviceArea } = service
 

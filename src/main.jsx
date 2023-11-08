@@ -18,6 +18,8 @@ import AddServices from './components/Add-services/AddServices';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import ShowAllService from './components/Home/ShowAllService';
 import ServiceDetailsButton from './components/Home/ServiceDetailsButton';
+import Update from './components/Update/Update';
+import PendingBooking from './components/My-schedules/PendingBooking';
 
 const router = createBrowserRouter([
   {
@@ -64,6 +66,15 @@ const router = createBrowserRouter([
         path: '/ServiceDetailsButton/:id',
         element: <ServiceDetailsButton></ServiceDetailsButton>,
         loader: ({params})=>fetch(`http://localhost:5000/allService/${params.id}`)
+      },
+      {
+        path: '/Update/:id',
+        element: <Update></Update>,
+        loader: ({params})=>fetch(`http://localhost:5000/PurchaseData/${params.id}`)
+      },
+      {
+        path: '/Pending',
+        element: <PendingBooking></PendingBooking>
       }
     ]
   },
