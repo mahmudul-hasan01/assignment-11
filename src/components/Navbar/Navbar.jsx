@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { AiFillCaretDown } from "react-icons/ai";
-// import logo from '../../assets/Image'
+import logo from '../../assets/Image/home-service-creative-logo-design-with-white-background-vector.jpg'
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
     const [open, setOpen] = useState(false)
@@ -42,7 +42,7 @@ const Navbar = () => {
                             </div>
                         </ul>
                     </div>
-                    {/* <img className="h-[100px] w-[200px]" src={logo}></img> */}
+                    <img className="h-[100px] w-[200px]" src={logo}></img>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

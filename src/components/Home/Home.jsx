@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import ServiceDetails from "./ServiceDetails";
 import axios from "axios";
 import Banner from "../Banner/Banner";
+import Award from "./Award";
 
 const Home = () => {
 
@@ -22,6 +23,7 @@ const Home = () => {
                     data?.data.map(item => <ServiceDetails key={item.serviceName} data={item}></ServiceDetails>)
                 }
             </div>
+            <Award></Award>
         </div>
     );
 };
