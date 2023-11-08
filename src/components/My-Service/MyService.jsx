@@ -17,7 +17,7 @@ const MyService = () => {
     })
 
     return (
-        <div className="grid grid-cols-2 max-w-screen-lg mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 max-w-screen-lg mx-auto">
             {
                 data?.data.map(item => <MyServiceCart key={item._id} BookingData={item}></MyServiceCart>)
             }

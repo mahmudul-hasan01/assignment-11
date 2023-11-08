@@ -2,7 +2,8 @@ import axios from "axios";
 
 
 const MyScheduleCaet = ({ BookingData }) => {
-    const { _id, Name, Image, email, ProviderEmail, TakingDate, Instruction, Price } = BookingData
+    const { _id, Name, Image, email, ProviderEmail, TakingDate, Instruction, Price, option } = BookingData
+    console.log(Object.keys(BookingData).join(','))
     const hendleSubmit = (e) => {
         e.preventDefault()
         const form = e.target
@@ -48,7 +49,8 @@ const MyScheduleCaet = ({ BookingData }) => {
                             <td>{TakingDate}</td>
                             <td>{Price}</td>
                             <th>
-                                    <form onSubmit={hendleSubmit}>
+                                    {
+                                        option ? <h1>{option}</h1> : <form onSubmit={hendleSubmit}>
                                         <button>
                                             <select name="options">
                                                 <option>Pending</option>
@@ -57,6 +59,7 @@ const MyScheduleCaet = ({ BookingData }) => {
                                             </select>
                                         </button>
                                     </form>
+                                    }
                             </th>
                         </tr>
                     </tbody>

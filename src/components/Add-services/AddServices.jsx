@@ -19,7 +19,7 @@ const AddServices = () => {
     }
     
     return (
-        <div className="modal-box w-[600px] mx-auto">
+        <div className="modal-box md:w-[600px] mx-auto">
             <form onSubmit={hendleSubmit} className="space-y-3">
                 <input name="Yourname" placeholder=" Your name" className="bg-red-100 border-2 border-black rounded-lg w-full py-2 pl-4" type="text" />
 

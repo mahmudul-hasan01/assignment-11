@@ -33,8 +33,6 @@ const ServiceDetailsButton = () => {
                         <h2 className="card-title">Area : {serviceArea}</h2>
                     </div>
                     <div className="card-actions ">
-                        {/* <button className="btn w-full btn-primary">Book Now</button> */}
-
                         <button className="py-2 px-5 text-white font-semibold bg-yellow-500 rounded-lg w-full" onClick={() => document.getElementById('my_modal_5').showModal()}>Book Now</button>
                         <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                             <div className="modal-box w-[600px] h-[500px] relative">

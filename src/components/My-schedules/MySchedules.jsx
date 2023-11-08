@@ -15,7 +15,6 @@ const MySchedules = () => {
         queryKey: ['myService'],
         queryFn: getService
     })
-    console.log(data?.data)
 
     return (
         <div>

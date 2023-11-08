@@ -4,9 +4,9 @@ const Footer = () => {
     return (
         <div>
             <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-                <nav className="grid grid-flow-col gap-4">
+                <nav className="grid grid-flow-col gap-4 text-xl">
                 <NavLink to='/' className={({ isActive }) => isActive ? 'px-4 py-2 rounded-lg bg-yellow-500 text-white' : 'px-4 py-2 rounded-lg'}>Home</NavLink>
-                            <NavLink to='/Service' className={({ isActive }) => isActive ? 'px-4 py-2 rounded-lg bg-yellow-500 text-white' : 'px-4 py-2 rounded-lg'}>Services</NavLink>
+                 <NavLink to='/Service' className={({ isActive }) => isActive ? 'px-4 py-2 rounded-lg bg-yellow-500 text-white' : 'px-4 py-2 rounded-lg'}>Services</NavLink>
                 </nav>
                 <nav>
                     <div className="grid grid-flow-col gap-4">

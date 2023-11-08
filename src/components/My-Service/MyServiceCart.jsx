@@ -9,8 +9,8 @@ const MyServiceCart = ({ BookingData }) => {
         .then(data => console.log(data.data))
     }
     return (
-        <div className="mt-7">
-            <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="my-7">
+            <div className="card w-96 mx-auto bg-base-100 shadow-xl">
                 <figure><img src={Image} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{Name}</h2>
