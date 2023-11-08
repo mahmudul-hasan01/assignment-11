@@ -20,42 +20,38 @@ const ShowAllService = () => {
     // }
     // ServiceName 
     // serviceName
-   console.log(input)
+    console.log(input)
     const getService = async () => {
-        const data = await axios.get(`http://localhost:5000/allService`,{withCredentials:true})
+        const data = await axios.get(`http://localhost:5000/allService`, { withCredentials: true })
         return data
     }
     const { data } = useQuery({
         queryKey: ['servicesCard'],
         queryFn: getService
     })
-    const hendleClick =(e)=>{
+    const hendleClick = (e) => {
         e.preventDefault()
         setInput(e.target.value)
         console.log(e?.target?.value)
     }
-    const hendleButton =(e)=>{
+    const hendleButton = (e) => {
         e.preventDefault()
-        const filter =data?.data.filter(item => item.serviceName.toLowerCase().indexOf(input.toLowerCase()) !== -1 )
+        const filter = data?.data.filter(item => item.serviceName.toLowerCase().indexOf(input.toLowerCase()) !== -1)
         setValue(filter)
     }
 
     return (
         <div>
-            <div className="flex justify-center my-10">
-                <div className="w-72">
-                    <div className="relative h-10 w-full min-w-[200px] ml-10 flex">
-                        <form>
-                            <input
-                                onChange={hendleClick}
-                                type="text"
-                                className="h-full w-full rounded-l-[7px] border border-red-600   px-3 py-2.5-shown:border-blue-gray-200f"
-                                placeholder="Search here...."
-                            />
-                        </form>
-                        <button className="py-2 px-5 text-white rounded-r-lg bg-red-600" onClick={hendleButton}>Search</button>
-                    </div>
-                </div>
+            <div className="flex justify-center mt-7">
+                <form>
+                    <input
+                        onChange={hendleClick}
+                        type="text"
+                        className="h-full w-full rounded-l-[7px] border border-yellow-500 px-3 py-2.5-shown:border-blue-gray-200f"
+                        placeholder="Search here...."
+                    />
+                </form>
+                <button className="py-2 px-5 text-white rounded-r-lg bg-yellow-500" onClick={hendleButton}>Search</button>
             </div>
             <div>
                 {
@@ -66,7 +62,7 @@ const ShowAllService = () => {
             </div>
             <div className="flex justify-center">
                 {
-                    !seeAll && <button className="py-2 px-5 text-white font-semibold bg-[#009444] rounded-lg my-5" onClick={() => setSeeAll(!seeAll)}>See All</button>
+                    !seeAll && <button className="py-2 px-5 text-white font-semibold bg-yellow-500 rounded-lg my-5" onClick={() => setSeeAll(!seeAll)}>See All</button>
                 }
             </div>
 

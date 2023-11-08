@@ -35,7 +35,7 @@ const ServiceDetailsButton = () => {
                     <div className="card-actions ">
                         {/* <button className="btn w-full btn-primary">Book Now</button> */}
 
-                        <button className="btn btn-neutral w-full" onClick={() => document.getElementById('my_modal_5').showModal()}>Book Now</button>
+                        <button className="py-2 px-5 text-white font-semibold bg-yellow-500 rounded-lg w-full" onClick={() => document.getElementById('my_modal_5').showModal()}>Book Now</button>
                         <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                             <div className="modal-box w-[600px] h-[500px] relative">
                                 <form onSubmit={hendleSubmit} className="space-y-3">
@@ -46,11 +46,11 @@ const ServiceDetailsButton = () => {
                                     <input name="TakingDate" placeholder="Service Taking Date" className="bg-red-100 border-2 border-black rounded-lg w-full py-2 pl-4" type="text" />
                                     <input name="Instruction" placeholder="Instruction" className="bg-red-100 border-2 border-black rounded-lg w-full py-2 pl-4" type="text" />
                                     <input name="Price" value={servicePrice} readOnly placeholder="Price" className="bg-red-100 border-2 border-black rounded-lg w-full py-2 pl-4" type="text" />
-                                    <button className="btn btn-accent"> Purchase Now</button>
+                                    <button className="py-2 px-5 text-white font-semibold bg-yellow-500 rounded-lg"> Purchase Now</button>
                                 </form>
                                 <div className="absolute top-0 right-0">
                                     <form method="dialog">
-                                        <button className="btn">X</button>
+                                        <button className="btn btn-neutral">X</button>
                                     </form>
                                 </div>
                             </div>

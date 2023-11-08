@@ -8,10 +8,10 @@ const ShowAddServiceCart = ({ service, }) => {
         <div>
             <div className="hero my-5  max-w-4xl mx-auto">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="w-[50%] h-[100%]">
+                    <div className="lg:w-[50%] h-[100%]">
                         <img src={serviceImage} className="w-full rounded-lg shadow-2xl" />
                     </div>
-                    <div className="w-[50%]">
+                    <div className="lg:w-[50%]">
                         <h1 className="text-5xl font-bold">{serviceName}</h1>
                         <p className="py-4">{serviceDescription}</p>
                         <div className="flex justify-between">
@@ -24,7 +24,7 @@ const ShowAddServiceCart = ({ service, }) => {
                                 <p>serviceArea: <span className="text-xl">{serviceArea}</span></p>
                             </div>
                         </div>
-                        <Link to={`/ServiceDetailsButton/${_id}`} className="btn btn-primary mr-3">{viewDetailButton}</Link>
+                        <Link to={`/ServiceDetailsButton/${_id}`} className="bg-yellow-500 py-2 2 px-5 rounded-lg text-white text-xl mr-3">{viewDetailButton}</Link>
                         {/* <Link to='/ShowAllService' className="btn btn-secondary">Show All</Link> */}
                     </div>
                 </div>

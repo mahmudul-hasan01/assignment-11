@@ -21,8 +21,8 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box">
                             <div className="flex gap-5 items-center text-xl">
-                                <NavLink to='/' className={({ isActive }) => isActive ? ' px-4 py-2 rounded-lg bg-purple-600' : ''}>Home</NavLink>
-                                <NavLink to='/Service' className={({ isActive }) => isActive ? ' text-red-600' : ''}>Services</NavLink>
+                                <NavLink to='/' className={({ isActive }) => isActive ? 'px-4 py-2 rounded-lg bg-yellow-500 text-white' : 'px-4 py-2 rounded-lg'}>Home</NavLink>
+                                <NavLink to='/Service' className={({ isActive }) => isActive ? 'px-4 py-2 rounded-lg bg-yellow-500 text-white' : 'px-4 py-2 rounded-lg'}>Services</NavLink>
                                 {
                                 user?.email && <div>
                                     <div className="relative z-50">
