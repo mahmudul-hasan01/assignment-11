@@ -8,7 +8,7 @@ const Award = () => {
             <div className='flex justify-center text-4xl mt-10'>
                 <h1>Our Award</h1>
             </div>
-            <div className='max-w-screen-lg mx-auto my-10 flex flex-col md:flex-row justify-center items-center md:items-start md:justify-between'>
+            <div className='max-w-screen-lg mx-auto my-10 flex flex-col lg:flex-row justify-center items-center lg:items-start gap-4 lg:gap-0 lg:justify-between'>
                 <img className='w-[150px] h-[150px] rounded-lg' src={img1} alt="" />
                 <img className='w-[200px] h-[150px]' src={img2} alt="" />
                 <img className='w-[200px] h-[150px]' src={img3} alt="" />

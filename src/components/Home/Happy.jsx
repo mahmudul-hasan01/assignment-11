@@ -9,7 +9,7 @@ const Happy = () => {
         <div className='flex justify-center text-4xl mt-10'>
             <h1>Our Customer</h1>
         </div>
-        <div className='max-w-screen-lg mx-auto my-10 flex justify-between'>
+        <div className='max-w-screen-lg mx-auto my-10 flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-0 justify-between'>
             <img className='w-[250px] h-[250px] rounded-lg' src={img1} alt="" />
             <img className='w-[250px] h-[250px] rounded-lg' src={img2} alt="" />
             <img className='w-[250px] h-[250px] rounded-lg' src={img3} alt="" />
