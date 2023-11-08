@@ -35,7 +35,7 @@ const ServiceDetailsButton = () => {
                     <div className="card-actions ">
                         <button className="py-2 px-5 text-white font-semibold bg-yellow-500 rounded-lg w-full" onClick={() => document.getElementById('my_modal_5').showModal()}>Book Now</button>
                         <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-                            <div className="modal-box w-[600px] h-[500px] relative">
+                            <div className="modal-box md:w-[600px] h-[500px] relative">
                                 <form onSubmit={hendleSubmit} className="space-y-3">
                                     <input name="ServiceName" value={serviceName} readOnly className="bg-red-100 border-2 border-black rounded-lg w-full py-2 pl-4" type="text" />
                                     <input name="ServiceImage" value={serviceImage} readOnly className="bg-red-100 border-2 border-black rounded-lg w-full py-2 pl-4" type="text" />
