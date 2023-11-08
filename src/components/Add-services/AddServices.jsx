@@ -14,7 +14,7 @@ const AddServices = () => {
         
         const data = { Yourname, Image, Youremail,ServiceName, ServiceArea, Description, Price }
         console.log(data)
-        axios.post(`http://localhost:5000/allService`, data)
+        axios.post(`https://server-site-lime.vercel.app/allService`, data)
        .then(data => console.log(data.data))
     }
     
@@ -35,7 +35,7 @@ const AddServices = () => {
 
                 <input name="Description"  placeholder="Description" className="bg-red-100 border-2 border-black rounded-lg w-full py-2 pl-4" type="text" />
 
-                <button className="btn btn-accent"> Purchase Now</button>
+                <button className="bg-yellow-500 py-2 2 px-5 rounded-lg text-white text-xl"> Purchase Now</button>
             </form>
         </div>
     );

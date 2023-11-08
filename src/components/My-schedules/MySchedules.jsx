@@ -8,7 +8,7 @@ import MyScheduleCaet from "./MyScheduleCaet";
 const MySchedules = () => {
     const {user}=useContext(AuthContext)
     const getService = async () => {
-        const data =await axios.get(`http://localhost:5000/PurchaseData/?email=${user?.email}`,{withCredentials:true})
+        const data =await axios.get(`https://server-site-lime.vercel.app/PurchaseData/?email=${user?.email}`,{withCredentials:true})
         return data
     }
     const { data } = useQuery({

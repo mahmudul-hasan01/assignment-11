@@ -15,14 +15,14 @@ const ShowAllService = () => {
     //     e.preventDefault()
     //     const value =e.target.value
     //     // const data ={value: value}
-    //     const data= axios.get(`http://localhost:5000/allService/?value=${value}`)
+    //     const data= axios.get(`https://server-site-lime.vercel.app/allService/?value=${value}`)
     //     .then(res => setInput(res.data))
     // }
     // ServiceName 
     // serviceName
     console.log(input)
     const getService = async () => {
-        const data = await axios.get(`http://localhost:5000/allService`, { withCredentials: true })
+        const data = await axios.get(`https://server-site-lime.vercel.app/allService`, { withCredentials: true })
         return data
     }
     const { data } = useQuery({

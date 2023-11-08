@@ -19,7 +19,7 @@ const ServiceDetailsButton = () => {
         const Instruction = form.Instruction.value
         const Price = form.Price.value
         const data = { Name, Image, email,ProviderEmail, TakingDate, Instruction, Price }
-        axios.post('http://localhost:5000/Purchase', data)
+        axios.post('https://server-site-lime.vercel.app/Purchase', data)
             .then(data => console.log(data.data))
     }
 

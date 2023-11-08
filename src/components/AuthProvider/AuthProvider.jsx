@@ -23,10 +23,10 @@ const AuthProvider = ({children}) => {
             const userEmail = {email: currentEmail}
             setUser(userInfo)
             if(userInfo){
-                axios.post('http://localhost:5000/jwt',userEmail,{withCredentials:true})
+                axios.post('https://server-site-lime.vercel.app/jwt',userEmail,{withCredentials:true})
                 .then(data => console.log(data.data))
             }else{
-                axios.post('http://localhost:5000/logout',userEmail,{withCredentials:true})
+                axios.post('https://server-site-lime.vercel.app/logout',userEmail,{withCredentials:true})
                 .then(data => console.log(data.data))
             }
         })

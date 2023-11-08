@@ -8,7 +8,7 @@ const MyScheduleCaet = ({ BookingData }) => {
         const form = e.target
         const option =form.options.value
         const options ={option}
-        axios.patch(`http://localhost:5000/PurchaseData/${_id}`,options)
+        axios.patch(`https://server-site-lime.vercel.app/PurchaseData/${_id}`,options)
         .then(data => console.log(data?.data))
     }
     return (

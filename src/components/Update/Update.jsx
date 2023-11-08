@@ -16,7 +16,7 @@ const Update = () => {
         const Instruction = form.Instruction.value
         const Price = form.Price.value
         const data = { Name, Image, email, ProviderEmail, TakingDate, Instruction, Price }
-        axios.put(`http://localhost:5000/PurchaseData/${id}`, data)
+        axios.put(`https://server-site-lime.vercel.app/PurchaseData/${id}`, data)
        .then(data => console.log(data.data))
     }
 
@@ -31,7 +31,7 @@ const Update = () => {
                 <input name="TakingDate" placeholder="Service Taking Date" className="bg-red-100 border-2 border-black rounded-lg w-full py-2 pl-4" type="text" />
                 <input name="Instruction" placeholder="Instruction" className="bg-red-100 border-2 border-black rounded-lg w-full py-2 pl-4" type="text" />
                 <input name="Price"  placeholder="Price" className="bg-red-100 border-2 border-black rounded-lg w-full py-2 pl-4" type="text" />
-                <button className="btn btn-accent"> Purchase Now</button>
+                <button className="bg-yellow-500 py-2 2 px-5 rounded-lg text-white text-xl"> Purchase Now</button>
             </form>
         </div>
     );

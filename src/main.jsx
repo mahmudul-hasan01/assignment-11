@@ -40,7 +40,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/Service',
-        element: <Services></Services>
+        element: <Services></Services>,
+        loader: ()=> fetch('https://server-site-lime.vercel.app/allService')
       },
       {
         path: '/Dashboard',
@@ -65,12 +66,12 @@ const router = createBrowserRouter([
       {
         path: '/ServiceDetailsButton/:id',
         element: <ServiceDetailsButton></ServiceDetailsButton>,
-        loader: ({params})=>fetch(`http://localhost:5000/allService/${params.id}`)
+        loader: ({params})=>fetch(`https://server-site-lime.vercel.app/allService/${params.id}`)
       },
       {
         path: '/Update/:id',
         element: <Update></Update>,
-        loader: ({params})=>fetch(`http://localhost:5000/PurchaseData/${params.id}`)
+        loader: ({params})=>fetch(`https://server-site-lime.vercel.app/PurchaseData/${params.id}`)
       },
       {
         path: '/Pending',
