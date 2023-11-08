@@ -4,6 +4,7 @@ import axios from "axios";
 import Banner from "../Banner/Banner";
 import Award from "./Award";
 import Video from "./Video";
+import Happy from "./Happy";
 
 const Home = () => {
 
@@ -26,6 +27,7 @@ const Home = () => {
             </div>
             <Award></Award>
             <Video></Video>
+            <Happy></Happy>
         </div>
     );
 };
