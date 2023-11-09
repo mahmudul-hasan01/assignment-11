@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import image from '../../assets/Image/registration.jpg'
 import { useContext } from 'react';
 import { AuthContext } from '../AuthProvider/AuthProvider';
+import { FcGoogle } from "react-icons/fc";
+import Swal from 'sweetalert2';
+
 const Register = () => {
-    const {register}=useContext(AuthContext)
+    const {register,googleLogin}=useContext(AuthContext)
 
     const hendleRegister =(e)=>{
         e.preventDefault()
@@ -11,8 +14,19 @@ const Register = () => {
         const email =form.email.value
         const password =form.password.value
         register(email,password)
-        .then(data => console.log(data))
+        .then(data => {
+            return Swal.fire(
+                'Good!',
+                'Successfully Register.',
+                'success'
+              )
+        })
         .catch(error => console.log(error))
+    }
+    const hendleGoogleLogin =()=>{
+        googleLogin()
+        .then()
+        .catch()
     }
 
     return (
@@ -40,8 +54,9 @@ const Register = () => {
                         </label>
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">Login</button>
-                    </div>
+                            <button className="py-2 px-5 rounded-lg text-white bg-yellow-500">Login</button>
+                            <button className="btn btn-outline text-xl mt-2" onClick={hendleGoogleLogin}><FcGoogle></FcGoogle> Google</button>
+                        </div>
                 </form>
             </div>
             <div>

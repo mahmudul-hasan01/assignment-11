@@ -1,6 +1,6 @@
 
 const ServiceCart = ({service}) => {
-    const { _id,serviceImage, serviceName, serviceDescription, viewDetailButton, servicePrice, image, name, serviceArea } = service
+    const { serviceImage, serviceName, serviceDescription, viewDetailButton, servicePrice, image, name, serviceArea } = service
     return (
         <div>
         <div className="hero my-5  max-w-4xl mx-auto">

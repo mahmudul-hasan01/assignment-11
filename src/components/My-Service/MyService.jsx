@@ -15,7 +15,7 @@ const MyService = () => {
         queryKey: ['myService'],
         queryFn: getService
     })
-
+console.log(data?.data)
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 max-w-screen-lg mx-auto">
             {

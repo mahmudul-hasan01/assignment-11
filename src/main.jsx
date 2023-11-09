@@ -20,11 +20,13 @@ import ShowAllService from './components/Home/ShowAllService';
 import ServiceDetailsButton from './components/Home/ServiceDetailsButton';
 import Update from './components/Update/Update';
 import PendingBooking from './components/My-schedules/PendingBooking';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayOut></MainLayOut>,
+    errorElement: <PageNotFound></PageNotFound>,
     children: [
       {
         path: '/',
@@ -40,8 +42,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/Service',
-        element: <Services></Services>,
-        loader: ()=> fetch('https://server-site-lime.vercel.app/allService')
+        element: <Services></Services>
+        // loader: ()=> fetch('https://server-site-lime.vercel.app/allService')
       },
       {
         path: '/Dashboard',

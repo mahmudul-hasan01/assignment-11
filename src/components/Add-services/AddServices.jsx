@@ -1,4 +1,5 @@
 import axios from "axios";
+import Swal from "sweetalert2";
 
 const AddServices = () => {
     const hendleSubmit = (e) => {
@@ -10,12 +11,18 @@ const AddServices = () => {
         const Image = form.PictureURL.value
         const ServiceArea = form.ServiceArea.value
         const Price = form.Price.value
-        const Description = form.Description.value
         
+        // const { _id,serviceImage, serviceName, serviceDescription, viewDetailButton, servicePrice, image, name, serviceArea } = service
         const data = { Yourname, Image, Youremail,ServiceName, ServiceArea, Description, Price }
         console.log(data)
         axios.post(`https://server-site-lime.vercel.app/allService`, data)
-       .then(data => console.log(data.data))
+       .then(data => {
+        return Swal.fire(
+            'Good!',
+            'Successfully Add Services.',
+            'success'
+          )
+       })
     }
     
     return (

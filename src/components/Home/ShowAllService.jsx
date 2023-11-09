@@ -29,6 +29,7 @@ const ShowAllService = () => {
         queryKey: ['servicesCard'],
         queryFn: getService
     })
+    console.log(data?.data)
     const hendleClick = (e) => {
         e.preventDefault()
         setInput(e.target.value)
@@ -55,9 +56,9 @@ const ShowAllService = () => {
             </div>
             <div>
                 {
-                    seeAll ? data?.data.map(item => <ShowAddServiceCart key={item._id} service={item}></ShowAddServiceCart>)
+                    seeAll ? value.map(item => <ShowAddServiceCart key={item._id} service={item}></ShowAddServiceCart>)
                         :
-                        data?.data.slice(0, 6).map(item => <ShowAddServiceCart key={item._id} service={item}></ShowAddServiceCart>)
+                        value.slice(0, 6).map(item => <ShowAddServiceCart key={item._id} service={item}></ShowAddServiceCart>)
                 }
             </div>
             <div className="flex justify-center">

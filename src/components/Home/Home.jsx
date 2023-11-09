@@ -9,14 +9,13 @@ import Happy from "./Happy";
 const Home = () => {
 
     const getService = async () => {
-        const data =await axios.get('https://server-site-lime.vercel.app/service')
+        const data =await axios.get('https://server-site-lime.vercel.app/service',{withCredentials:true})
         return data
     }
     const { data } = useQuery({
         queryKey: ['services'],
         queryFn: getService
     })
-
     return (
         <div>
             <Banner></Banner>
